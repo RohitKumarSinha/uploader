@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Upload Images</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <style>
+      a {
+        color: white !important;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar" style="background-color: #42a5f5;">
+      <a class="navbar-brand" style="color: white;" href="index.html"
+        >upload videos</a
+      >
+      <ul class="nav justify-content-end">
+        <li class="nav-item" style="color: white;">
+          <a class="nav-link active" href="view.html">Give rating</a>
+        </li>
+        <li class="nav-item" style="color: white;">
+          <a class="nav-link active" href="Contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item" style="color: white;">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+      </ul>
+    </nav>
+    <br /><br />
+    <div class="container">
+      <progress
+        class="determinate"
+        style="width: 100%;"
+        value="0"
+        id="uploader"
+        max="100"
+        >0%</progress
+      ><br /><br />
+      <!-- <select
+        class="form-control"
+        id="formSelect"
+        onchange="getOption(this.value)"
+      >
+        <option value="T-Shirts">T-Shirt</option>
+        <option value="Dheeraj Mittal">Dheeraj Mittal</option>
+        <option value="Deepak Mehta">Deepak Mehta</option>
+        <option value="Esha Gupta">Esha Gupta</option>
+        <option value="Rishitha Vurimi">Rishitha Vurimi</option>
+        <option value="Raushan Kumar">Raushan Kumar</option>
+        <option value="Bharath kasyap">Bharath kasyap</option>
+        <option value="Ishaan">Ishaan</option>
+        <option value="Chetan Machakanur">Chetan Machakanur</option>
+        <option value="Shyreyash Pathak">Shyreyash Pathak</option>
+        <option value="Skand Singh">Skand Singh</option>
+        <option value="Anoop Gupta">Anoop Gupta</option>
+        <option value="Mujtaba">Mujtaba</option>
+        <option value="Rohit Kumar Sinha">Rohit Kumar Sinha</option>
+      </select>
+      <p class="text-center"><strong>OR</strong></p>
+      <div class="form-group">
+        <label for="UserInput">Enter your folder name</label>
+        <input type="text" class="form-control" id="UserInput" />
+      </div>
+
+      <br />
+      <br /> -->
+
+      <div class="form-group">
+        <label for="exampleFormControlFile1">Choose your video</label>
+        <br />
+        <input
+          id="photo"
+          class="file"
+          name="mainimage"
+          value=""
+          type="file"
+          class="form-control-file"
+          id="exampleFormControlFile1"
+          onchange="getImage()"
+          multiple
+        />
+      </div>
+      <br />
+
+      <button class="btn btn-primary" onclick="uploadImage()">
+        Upload Video
+      </button>
+      |
+      <button class="btn btn-primary" onclick="Cleardata()">
+        Clear
+      </button>
+      <br />
+      <br />
+      <div id="showImage" class="text-center"></div>
+      <br />
+      <br />
+      <div id="profile"></div>
+      <div id="clearbutton"></div>
+      <br />
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</html>

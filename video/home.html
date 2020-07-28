@@ -1,0 +1,117 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      @media only screen and (max-width: 990px) {
+        .brand-logo {
+          font-weight: 500;
+          font-size: 1.5rem !important;
+          text-align: right !important;
+          position: relative !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">PUTATOE TALENT SEARCH PROGRAM</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="left hide-on-med-and-down">
+          <li><a href="Contact.html">Contact</a></li>
+          <li class="active"><a href="home.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <div class="container">
+      <p class="flow-text">
+        One common flaw we've seen in many frameworks is a lack of support for
+        truly responsive text. While elements on the page resize fluidly, text
+        still resizes on a fixed basis. To ameliorate this problem, for text
+        heavy pages, we've created a class that fluidly scales text size and
+        line-height to optimize readability for the user. Line length stays
+        between 45-80 characters and line height scales to be larger on smaller
+        screens. To see Flow Text in action, slowly resize your browser and
+        watch the size of this text body change! Use the button above to toggle
+        off/on flow-text to see the difference!
+      </p>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card medium hoverable z-depth-3">
+            <div class="card-image">
+              <a href="index.html">
+                <img
+                  src="https://cdn.pixabay.com/photo/2017/02/07/02/16/cloud-2044823_960_720.png"
+                />
+              </a>
+              <span class="card-title black-text">
+                <strong>Upload your video</strong>
+              </span>
+            </div>
+            <div class="card-content">
+              <p>
+                I am a very simple card. I am good at containing small bits of
+                information. I am convenient because I require little markup to
+                use effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card medium hoverable z-depth-3">
+            <div class="card-image">
+              <a href="view.html">
+                <img
+                  src="https://p0.pxfuel.com/preview/166/16/839/finger-feedback-confirming-write-a-review.jpg"
+                />
+              </a>
+              <span class="card-title black-text">
+                <strong>Give your rating</strong>
+              </span>
+            </div>
+            <div class="card-content">
+              <p>
+                I am a very simple card. I am good at containing small bits of
+                information. I am convenient because I require little markup to
+                use effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="flow-text">
+        One common flaw we've seen in many frameworks is a lack of support for
+        truly responsive text. While elements on the page resize fluidly, text
+        still resizes on a fixed basis.
+      </p>
+    </div>
+    <!-- !-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
+  </body>
+</html>
